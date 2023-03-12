@@ -1,0 +1,12 @@
+1.
+mkdir c_start
+find myetc -name "c*" -exec mv '{}' c_start \;
+tar -cf c_start.tar c_start
+rm -rf myetc
+rm -rf c_start
+rm -rf c_start.tar
+
+2.
+tar -cf c_start.tar $(find myetc -name "c*")
+rm -rf myetc
+rm -rf c_start.tar

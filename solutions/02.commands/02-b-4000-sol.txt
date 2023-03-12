@@ -1,0 +1,1 @@
+cp -r $(du /etc 2>/dev/null | sort -n | head -n 1 | cut -f 2) smallestEtc

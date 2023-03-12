@@ -1,0 +1,1 @@
+mkdir myetc; find /etc -perm -a=r -exec cp '{}' myetc \;

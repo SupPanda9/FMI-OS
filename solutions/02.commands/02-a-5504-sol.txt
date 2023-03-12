@@ -1,0 +1,1 @@
+find /etc -type f -perm -g=w,o=w
