@@ -1,0 +1,5 @@
+Използвайки файл population.csv, намерете през коя година в България има най-много население.
+
+ cat population.csv | awk -F ',' 'BEGIN {max=0; year=""} $1=="Bulgaria" {if(max<$4) {max=$4; year=$3}} END {print year}'
+1988
+

@@ -1,0 +1,9 @@
+Изведете броя на байтовете в /etc/passwd.
+Изведете броя на символите в /etc/passwd.
+Изведете броя на редовете  в /etc/passwd.
+
+
+Тръбата е, за да виждаме само число.
+wc -c /etc/passwd | cut -f 1 -d ' '
+wc -m /etc/passwd | cut -f 1 -d ' '
+wc -l /etc/passwd | cut -f 1 -d ' '

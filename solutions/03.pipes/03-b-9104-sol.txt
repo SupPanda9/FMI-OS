@@ -1,0 +1,7 @@
+Да се изведат всички албуми, сортирани по година.
+
+ find songs/ -mindepth 1 | sed "s/songs\///g" | sed "s/.*(\(.*\)).*/\1/g" | sort -t"," -k2n
+ с годините
+
+find songs/ -mindepth 1 | sed "s/songs\///g" | sed "s/.*(\(.*\)).*/\1/g" | sort -t"," -k2n | cut -d"," -f1
+само албуми

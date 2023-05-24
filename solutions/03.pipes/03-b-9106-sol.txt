@@ -1,0 +1,11 @@
+Да се направят директории с имената на уникалните групи. За улеснение, имената
+от две думи да се напишат слято:
+
+Beatles, PinkFloyd, Madness
+
+с място
+find songs/ -mindepth 1 | sed "s/songs\/\(.*\) -.*/\1/g" | sort | uniq | xargs -I{} mkdir {}
+
+
+без място
+find songs/ -mindepth 1 | sed "s/songs\/\(.*\) -.*/\1/g" | sort | uniq | tr -d " " | xargs -I{} mkdir {}
